@@ -19,86 +19,53 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
+body{
+    width: 750px;
+    margin: 0 auto;
+    padding: 80px 80px;
+}
+p {
+  font-size: 11px;
+  line-height: 23px; 
+}
+h1, h2, h3, h4, h5, h6 {
+  font-size: 17px;
+  line-height: 19px; 
+}
+p + :is(h1, h2, h3, h4) {
+  margin-top: 64px;
+}
+:is(h1, h2, h3, h4) + p {
+  margin-top: 28px;
+}
+h1, h2, h3, h4 {
+  margin: 0;
+}
+ol {
+  font-size: 11px;
+  line-height: 23px; 
+}
 
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+:is(h1, h2, h3, h4) ~ :is(h1, h2, h3, h4) {
+  margin-top: 40px;
 }
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
-/*--------------------*/
-
-h1, h2, h3, h4, h5, h6, p{
-    margin-left: 200px;
-    margin-right: 200px;
-}
-p{
+blockquote {
     font-size: 11px;
-    line-height: 23px;
-    font-family: Arial, Helvetica, sans-serif;
-    margin-bottom: 52px;
+  line-height: 23px; 
 }
-
-h1, h2, h3, h4, h5, h6{
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bolder;
+img + :is(h1, h2, h3, h4, p) {
+  margin-top: 90px;
 }
-
-h1{
-    font-size: 21px;
-    line-height: 24px;
-    margin-top: 80px;
-    margin-bottom: 36px
+p + img {
+  margin-top: 90px;
 }
-
-h2{
-    font-size: 17px;
-    line-height: 19px;
-    margin-bottom: 28px;
-    margin-top: 12px
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 40px auto;
+  
 }
-h3{
-    font-size: 15px;
-    line-height: 19px;
-    margin-bottom: 28px;
-    margin-top: 4px
-}
-
-.grey{
-    color: grey;
-    font-size: 12px;
-    line-height: 20px;
-    margin-bottom: 52px;
-}
-
-.grey > a{
-    color: gray;
-}
-.grey > a:hover{
-    color: blue;
-}
-
-img{
-    display: block;
-    max-height: 200px;
-    margin-top: 38px;
-    margin-bottom: 10px;
-    margin: auto;
+img {
+  filter: sepia(1) hue-rotate(220deg) saturate(3) brightness(0.8);
 }
