@@ -1,0 +1,82 @@
+*{
+    font-family: "Old Standard TT", serif;
+}
+.hi{
+    display: flex;
+    flex-direction: row;
+    padding-top: 10px;
+}
+.logo{
+    font-size: 44px;
+}
+.nav{
+    position: absolute;
+    top: 0;
+    right: 10px;
+    padding-top: 20px;
+    font-size: 24px;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+}
+.haf{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.im{
+    display: flex;
+    width: 50%;
+
+}
+.tex{
+    display: flex;
+    flex-direction: column;
+    padding-top: 200px;
+    padding-left: 40px ;
+    padding-right: 40px;
+    width: 50%;
+}
+.word{
+    font-size: 40px;
+}
+p{
+    font-size: 24px;
+}
+.last{
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+    font-size: 44px;
+}
+.last1{
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    font-size: 44px;
+}
+.rowmi{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    padding-top: 40px;
+    padding-bottom: 100px;
+}
+.q1{
+    background-color: rgb(255, 255, 255); 
+    color: black;            
+    padding: 10px 10px;        
+    border-radius: 4px;
+    font-size: 20px;
+
+}
+.white{
+    background-color: rgb(0, 0, 0); 
+    color: rgb(255, 255, 255);            
+    padding: 10px 10px;        
+    border-radius: 4px;
+    font-size: 20px;
+    padding-bottom: 10px;
+}
