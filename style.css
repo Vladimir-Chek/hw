@@ -1,71 +1,96 @@
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+nav {
+  height: 100px;
+  background: rgb(208, 208, 208);
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: end;
+}
+.man{
+    display: flex;
+    width: 1920px;
+    height: 1626px;
+    background: rgb(208, 208, 208);
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+    
 }
 body{
-    width: 750px;
-    margin: 0 auto;
-    padding: 80px 80px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background: rgb(226, 226, 226);
+    
 }
-p {
-  font-size: 11px;
-  line-height: 23px; 
+.man1{
+    padding-top: 50px;
+    width: 1440px;
+    height: 340px;
+    border-radius: 24px;
+    background: rgb(255, 255, 255);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+    gap: 120px;
 }
-h1, h2, h3, h4, h5, h6 {
-  font-size: 17px;
-  line-height: 19px; 
+.man2
+{
+    width: 1440px;
+    height: 1156px;
+    border-radius: 24px;
+    background: rgb(226, 226, 226);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
 }
-p + :is(h1, h2, h3, h4) {
-  margin-top: 64px;
+.min2{
+    width: 952px;
+    height: 1156px;
+    border-radius: 12px;
+    background: rgb(226, 226, 226);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 17px;
 }
-:is(h1, h2, h3, h4) + p {
-  margin-top: 28px;
+.mimi{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 10px;
 }
-h1, h2, h3, h4 {
-  margin: 0;
+.mini{
+    height: 280px;
+    width: 300px;
+    background: rgb(255, 255, 255);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    border-radius: 24px;
+    gap: 24px;
+    position: relative; 
 }
-ol {
-  font-size: 11px;
-  line-height: 23px; 
+.migi{
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+    margin-left: 15px;
+}
+.name{
+    display: flex;
+    flex-direction: column;
+}
+span {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 26px;
+  background: blue;
+  border-radius: 24px;
+  color: white;
+  padding: 0 10px;
+  transform: rotate(15deg);
 }
 
-:is(h1, h2, h3, h4) ~ :is(h1, h2, h3, h4) {
-  margin-top: 40px;
-}
-blockquote {
-    font-size: 11px;
-  line-height: 23px; 
-}
-img + :is(h1, h2, h3, h4, p) {
-  margin-top: 90px;
-}
-p + img {
-  margin-top: 90px;
-}
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-  margin: 40px auto;
-  
-}
-img {
-  filter: sepia(1) hue-rotate(220deg) saturate(3) brightness(0.8);
-}
